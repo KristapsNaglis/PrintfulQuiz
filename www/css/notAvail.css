@@ -1,0 +1,72 @@
+html, body {
+    margin: 0;
+    padding: 0;
+
+    color: white;
+    background-color: #383838;
+
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.back {
+    position: fixed;
+
+    font-size: 2.5em;
+
+    margin: 1em;
+
+    text-transform: uppercase;
+}
+
+.backText:link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.48);
+    transition: .25s ease-in-out;
+}
+
+.backText:visited {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.48);
+    transition: .25s ease-in-out;
+}
+
+.backText:hover {
+    color: white;
+
+    transition: .25s ease-in-out;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    font-family: Roboto;
+    font-size: 5em;
+    text-transform: uppercase;
+
+    justify-items: center;
+}
+
+#first {
+    font-weight: 900;
+    font-size: 1.8em;
+
+    align-self: end;
+    margin: 0;
+
+}
+
+#second {
+    align-self: start;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    #first {
+        font-size: .5em;
+    }
+}

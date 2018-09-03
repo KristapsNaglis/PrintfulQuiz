@@ -1,0 +1,49 @@
+html, body {
+    margin: 0;
+    padding: 0;
+
+    color: white;
+    background-color: #383838;
+
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    font-size: 3em;
+
+    justify-items: center;
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+
+    text-transform: uppercase;
+}
+
+.thankYouText {
+    align-self: end;
+
+    font-size: 5em;
+    font-weight: 900;
+}
+
+#tryAgain:link {
+    font-size: .8em;
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+}
+
+#tryAgain:visited {
+    font-size: .8em;
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+}
