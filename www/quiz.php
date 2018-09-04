@@ -61,6 +61,7 @@ $total = $results->num_rows;
     var totalQuestions = <?php echo $total?>;
 </script>
 
+<!-- Main container that holds everything -->
 <div class="container">
     <!-- Div for question text -->
     <div class="question">
@@ -74,13 +75,14 @@ $total = $results->num_rows;
         <!-- Form that checks if form is filled (JS) and id so, sends it to processing -->
         <form onsubmit="return validateForm()" method="post" action="process.php" class="form" id="form" name="Form">
             <ul class="optionsUL" id="options">
-                <!-- PHP loop that prints out multiple choices dynamically, according to how many answers are -->
+                <!-- PHP while loop that prints out multiple choices dynamically, according to how many answers are -->
                 <?php while ($row = $choices->fetch_assoc()): ?>
                     <li>
                         <!-- HTMl list element as a placeholder, into which PHP variables will go upon load -->
                         <input id="option" name="option" type="radio" value="<?php echo $row['options_id']; ?>"/>
                         <label> <?php echo $row['options_text'] ?> </label>
                     </li>
+                    <!-- End PHP while loop -->
                 <?php endwhile; ?>
             </ul>
             <div class="buttonNext">

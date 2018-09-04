@@ -8,7 +8,7 @@ $(document).ready(function () {
 
 //Check to see if answer is selected
 function validateForm() {
-    
+
     //Create variable for holding value of form - #Form, and input - option
     var option = document.forms["Form"]["option"].value;
 
