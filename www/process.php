@@ -1,5 +1,5 @@
+<!-- Load database and start session -->
 <?php include 'database.php'; ?>
-
 <?php session_start(); ?>
 
 <?php

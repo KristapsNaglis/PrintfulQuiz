@@ -1,3 +1,4 @@
+<!-- Load database and include php that processes everything -->
 <?php include 'database.php'; ?>
 <?php include 'process.php'; ?>
 <?php

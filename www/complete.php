@@ -1,3 +1,4 @@
+<!-- Start session -->
 <?php session_start(); ?>
 
     <!DOCTYPE html>
