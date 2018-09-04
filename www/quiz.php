@@ -92,7 +92,7 @@ $total = $results->num_rows;
                 <div class="progressWrap">
                     <!-- Progressbar itself (uses converted JavaScript variables)-->
                     <progress max="100" value="0" id="progress"></progress>
-                    <!-- Progressbar text that uses PHP variabales -->
+                    <!-- Progressbar text that uses PHP variables -->
                     <p id="progressText"><?php echo $question['question_id']; ?> of <?php echo $total ?></p>
                 </div>
             </div>
