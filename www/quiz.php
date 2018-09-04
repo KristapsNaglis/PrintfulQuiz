@@ -9,8 +9,10 @@ $number = (int)$_GET['n'];
  * Get Question
  */
 $query = "SELECT * FROM `questions`  WHERE question_id = $number";
+
 //Get result
 $result = $mysqli->query($query) or die($mysqli->error . __LINE__);
+
 //Get question
 $question = $result->fetch_assoc();
 
@@ -19,6 +21,7 @@ $question = $result->fetch_assoc();
  * Get Options
  */
 $query = "SELECT * FROM `options`  WHERE question_id = $number";
+
 //Get result
 $choices = $mysqli->query($query) or die($mysqli->error . __LINE__);
 
@@ -27,8 +30,10 @@ $choices = $mysqli->query($query) or die($mysqli->error . __LINE__);
 *  Get total questions
 */
 $query = "SELECT * FROM `questions`";
+
 //Get results
 $results = $mysqli->query($query) or die($mysqli->error . __LINE__);
+
 //Total number of questions
 $total = $results->num_rows;
 

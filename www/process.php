@@ -9,8 +9,9 @@ if (!isset($_SESSION['score'])) {
     $_SESSION['score'] = 0;
 }
 
-//All actions that will happen when user submits answers
+//All actions that will happen when user submits an answer
 if (isset($_POST['Submit'])) {
+
     //Create variables
     $number = $_POST['number'];
     $selectedOption = $_POST['option'];
@@ -19,10 +20,13 @@ if (isset($_POST['Submit'])) {
     /*
     *  Get total questions
     */
+
     $query = "SELECT * FROM `questions`";
+
     //Get results
     $results = $mysqli->query($query) or die($mysqli->error . __LINE__);
 
+    //Total questions
     $total = $results->num_rows;
 
     //Set total as session variable
@@ -50,11 +54,14 @@ if (isset($_POST['Submit'])) {
     /*
      * Insert each answer into database
      */
+
     //Create variables
     $score = $_SESSION['score'];
     $inputName = $_SESSION['inputName'];
+
     //Create query for inserting values into database table
     $query = "INSERT INTO `answers` ( username , options_id , score) VALUES ('$inputName' , '$selectedOption' , '$score')";
+
     //Run query
     $insert_row = $mysqli->query($query) or die($mysqli->error . __LINE__);
 
