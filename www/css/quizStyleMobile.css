@@ -1,3 +1,5 @@
+/*Style for phone size screens*/
+/*Transforms grid templates two columns into one*/
 @media screen and (max-width: 768px) {
     #options {
         grid-template-columns: 1fr
