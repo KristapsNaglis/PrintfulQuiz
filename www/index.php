@@ -21,7 +21,7 @@
         <!-- Homepage main heading -->
         <div class="heading">
             <p id="quizHeading">Testa uzdevums<br>
-            <p id="monospace">@printful</p></p>
+            <p id="monospace">@printful</p>
         </div>
 
         <div class="content">
@@ -50,6 +50,9 @@
         </div>
     </div>
 </div>
+
+<!--Test container for now-->
+<div class="backgroundContainer"></div>
 
 </body>
 </html>
