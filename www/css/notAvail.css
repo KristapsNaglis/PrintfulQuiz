@@ -44,7 +44,7 @@ html, body {
     display: grid;
     grid-template-rows: 1fr 1fr;
 
-    font-family: Roboto;
+    font-family: Roboto, serif;
     font-size: 5em;
     text-transform: uppercase;
 
