@@ -1,4 +1,5 @@
-![printful logo][logo]  # **PrintfulQuiz**
+![printful logo][logo]  
+# **PrintfulQuiz**
                
 #### Assignment made for Printful junior PHP programmer staff selection
 
