@@ -51,8 +51,5 @@
     </div>
 </div>
 
-<!--Test container for now-->
-<div class="backgroundContainer"></div>
-
 </body>
 </html>
