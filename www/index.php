@@ -1,6 +1,5 @@
-<!-- Load database and start session -->
-<?php include 'database.php'; ?>
 <?php session_start(); ?>
+<?php include 'database.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
