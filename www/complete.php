@@ -1,4 +1,6 @@
 <!-- Start session -->
+<!-- Load database and start session -->
+<?php include 'database.php'; ?>
 <?php session_start(); ?>
 
 <!DOCTYPE html>
@@ -33,4 +35,12 @@
 
 <!-- PHP code that clears all the PHP data after loading this final page -->
 <?php
+$score = $_SESSION['score'];
+$inputName = $_SESSION['inputName'];
+//Create query for inserting values into database table
+$query = "INSERT INTO `final_scores` ( username , score_final) VALUES ('$inputName' , '$score')";
+
+//Run query
+$insert_row = $mysqli->query($query) or die($mysqli->error . __LINE__);
+
 session_destroy();

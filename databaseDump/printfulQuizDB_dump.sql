@@ -35,8 +35,31 @@ CREATE TABLE `answers` (
 
 LOCK TABLES `answers` WRITE;
 /*!40000 ALTER TABLE `answers` DISABLE KEYS */;
-INSERT INTO `answers` VALUES ('Kristaps',2,1),('Kristaps',6,2),('Kristaps',7,3);
+INSERT INTO `answers` VALUES ('Kristaps',2,1),('Kristaps',6,2),('Kristaps',7,3),('Jeff',1,0),('Jeff',4,0),('Jeff',7,1);
 /*!40000 ALTER TABLE `answers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `final_scores`
+--
+
+DROP TABLE IF EXISTS `final_scores`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `final_scores` (
+  `username` text NOT NULL,
+  `score_final` int(99) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `final_scores`
+--
+
+LOCK TABLES `final_scores` WRITE;
+/*!40000 ALTER TABLE `final_scores` DISABLE KEYS */;
+INSERT INTO `final_scores` VALUES ('Kristaps',3),('Jeff',1);
+/*!40000 ALTER TABLE `final_scores` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -98,4 +121,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-09-03 18:28:47
+-- Dump completed on 2018-09-10 16:23:44
