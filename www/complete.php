@@ -1,4 +1,3 @@
-<!-- Start session -->
 <!-- Load database and start session -->
 <?php include 'database.php'; ?>
 <?php session_start(); ?>
@@ -22,7 +21,7 @@
     <!-- Get results -->
     <div class="results">
         <!-- Displaying results that uses PHP SESSION variables -->
-        <p>You anwered right to <?php echo $_SESSION['score']; ?>
+        <p>You answered right to <?php echo $_SESSION['score']; ?>
             out of <?php echo $_SESSION['totalQuestions'] ?> questions</p>
         <br>
         <!-- Button that redirects to homepage -->
@@ -33,14 +32,16 @@
 </body>
 </html>
 
-<!-- PHP code that clears all the PHP data after loading this final page -->
 <?php
+//Set variables for use in database table - final_scores
 $score = $_SESSION['score'];
 $inputName = $_SESSION['inputName'];
+
 //Create query for inserting values into database table
 $query = "INSERT INTO `final_scores` ( username , score_final) VALUES ('$inputName' , '$score')";
 
 //Run query
 $insert_row = $mysqli->query($query) or die($mysqli->error . __LINE__);
 
+//Clear PHP data
 session_destroy();
