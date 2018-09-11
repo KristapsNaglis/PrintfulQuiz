@@ -1,0 +1,12 @@
+/*Style for phone size screens*/
+/*Transforms grid templates two columns into one*/
+@media only screen and (max-width: 768px) {
+    .quizSelect {
+        -webkit-appearance: none;
+    }
+
+    .selectionColumn {
+        width: 40em;
+        margin-left: Calc(50vw - 40em / 2);
+    }
+}
