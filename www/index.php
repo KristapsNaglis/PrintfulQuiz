@@ -8,6 +8,7 @@
     <title>Printful Tests</title>
     <link rel="stylesheet" href="css/mainStyle.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,300i,900" rel="stylesheet">
+    <meta id="viewport" name="viewport" content ="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 </head>
 <body>
 

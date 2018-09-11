@@ -46,6 +46,7 @@ $total = $results->num_rows;
     <link rel="stylesheet" href="css/quizStyle.css">
     <link rel="stylesheet" href="css/quizStyleMobile.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,700,300i,900" rel="stylesheet">
+    <meta id="viewport" name="viewport" content ="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <script
             src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="

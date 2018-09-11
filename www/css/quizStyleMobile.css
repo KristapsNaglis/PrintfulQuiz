@@ -1,7 +1,18 @@
 /*Style for phone size screens*/
 /*Transforms grid templates two columns into one*/
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     #options {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+    }
+
+    .questionText{
+        margin: 0;
+
+        line-height: 10vh;
+    }
+
+    #progress {
+        width: 50vw;
     }
 }

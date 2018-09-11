@@ -15,16 +15,18 @@ ul {
 
 .container {
     width: 100vw;
+    height: 100vh;
 
     text-align: center;
 
-/*    display: grid;
-    grid-template-rows: 2fr 3fr 1fr;*/
+    /*    display: grid;
+        grid-template-rows: 2fr 3fr 1fr;*/
 
 }
 
 .question {
     width: 100vw;
+    height: 20vh;
 
 
     font-size: 4em;
@@ -36,14 +38,14 @@ ul {
 
 .questionText{
     margin: 0;
-    line-height: 30vh;
+    line-height: 20vh;
 
     align-self: center;
 }
 
 .options {
     width: 50vw;
-    height: 70vh;
+    height: 80vh;
 
     padding: 0 25vw 0 25vw;
 
@@ -94,9 +96,9 @@ ul {
 }
 
 #options input[type="radio"]:checked + label, .Checked + label {
-     background: #ff003d;
+    background: #ff003d;
     transition: .25s ease-in-out;
- }
+}
 
 #options input[type="radio"]:hover + label, .Checked + label {
     background: rgba(180, 10, 57, 0.31);
@@ -186,7 +188,7 @@ input[type="button"]:focus , input[type="button"]:active{
     margin: 0;
     padding: 0;
 
-    font-size: 5em;
+    font-size: 4em;
     font-weight: 700;
 }
 
